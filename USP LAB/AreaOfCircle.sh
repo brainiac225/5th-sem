@@ -1,5 +1,7 @@
 #! /bin/sh
-echo "Enter the radius"
-read r
-area=`echo 3.14159 \* $r \* $r|bc`
-echo $area
+
+echo "***AREA OF CIRCLE***"
+
+read -p "Enter the radius: " radius
+area=$(echo "3.14*$radius*$radius"|bc)
+echo "Area of the circle is: $area"
